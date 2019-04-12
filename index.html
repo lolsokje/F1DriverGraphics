@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script
+        src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+        crossorigin="anonymous">
+    </script>
+    <script src="node_modules/html2canvas/dist/html2canvas.min.js"></script>
+    <script src="script/script.js"></script>
+</head>
+<body>
+    Name: <input type="text" id="nameInput" value="Lewis"><br>
+    Last name: <input type="text" id="lastNameInput" value="Hamilton"><br>
+    Abbreviation: <input type="text" id="abbreviationInput" value="HAM" maxlength="3"><br>
+    Team: <input type="text" id="teamInput" value="Mercedes AMG Petronas F1"><br>
+    Number: <input type="number" id="numberInput" value="44"><br>
+    Position: <input type="text" id="positionInput" value="1" maxlength="3"><br>
+    Accent color: <input type="color" id="colorInput" value="#28E8EE"><br>
+    Eliminated: <input type="checkbox" id="eliminatedInput">
+
+    <div id="graphic">
+        <div id="position">
+            1
+        </div>
+        <div id="divider"></div>
+
+        <div id="details">
+            <div id="name">
+                <span id="firstName">Lewis</span> <span id="lastName">HAMILTON</span>
+            </div>
+    
+            <div id="team">Mercedes AMG Petronas F1</div>
+        </div>
+
+        <div id="extra">
+            <div id="number">
+                44
+            </div>
+
+            <div id="tla">
+                HAM
+            </div>
+        </div>
+    </div>
+
+    <button onclick="takeScreenshot()">To Image</button>
+
+    <div id="screenshot"></div>
+</body>
+</html>
